@@ -1,8 +1,8 @@
 # -E-MWM-Style
-# EMWM / MWM window manager style. MWM is the Motif Windows Manager.
+# EMwm / Mwm window manager style. Mwm is the Motif Windows Manager.
 
-EMWM is a lightweight window manager for X11. It is derived from MWM, adding
-support for UTF-8 / Xft , Xinerama and Extended Window Manager Hints. EMWM is made by alx210 
+EMwm is a lightweight window manager for X11. It is derived from Mwm, adding
+support for UTF-8 / Xft , Xinerama and Extended Window Manager Hints. EMwm is made by alx210 
 who is also a contributor of the CDE (common desktop environment) project. 
 
 These configuration files are inspired by the HP-UX workstations look and CDE (Common Desktop Manager)
