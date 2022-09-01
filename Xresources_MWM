@@ -1,0 +1,143 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!             .Xresources / .Xdefaults            !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! 2022 09
+! Licence : None
+
+! Xft configuration
+Xft*dpi:       120
+Xft*antialias: true
+Xft*rgba:      rgb
+!Xft*hinting:  true
+Xft*hinting:   full
+Xft*hintstyle: hintfull
+Xft*lcdfilter: lcddefault
+
+
+!! 
+*lookAndFeel: motif
+*Customization: -color
+
+
+! Multiscreen (does not work) but Mwm can be combined with the vdesk program
+! to get multiple screens
+Mwm*multiScreen:		True
+Mwm*screens:			Desk1 Desk2 Desk3 Desk4
+
+
+! Icon Box
+! Creates a box to place your icons
+Mwm*useIconBox:		 True
+Mwm*IconBoxDecoration:    -all
+Mwm*iconBoxGeometry:		10x1+600-0
+
+! Causes icon box to scroll horizontally only
+Mwm*iconBoxSBDisplayPolicy:     horizontal
+
+! Sets the icon box''s title (does not work)
+Mwm*iconBoxName:		Icon Box
+Mwm*iconBoxTitle:              Icon Box
+
+! Icons'' background color
+Mwm*icon*background:            #4992a7
+Mwm*fadeNormalIcon:		True
+
+! Sets where the icons will appear (on the screen, or in an icon box if it
+! exists)
+Mwm*iconPlacement:		left top
+! "fades" icon of applications that are active
+
+
+! Limit resize of clients
+Mwm*limitResize:		True
+Mwm*maximumMaximumSize :	1906 x 1043
+Mwm*Firefox*maximumClientSize: 1906 x 1043
+
+! Client behaviour
+Mwm*clientAutoPlace:		True
+Mwm*moveOpaque :		False
+
+! Causes whatever your pointer is over to become the active application
+Mwm*keyboardFocusPolicy:	clicktofocus
+
+! Pointer
+! Lets you select by hand the location of a new application (unless a specific
+! location is indicated when you run it)
+Mwm*interactivePlacement:	FALSE
+
+
+! Clients look / decoration
+! Sets a foreground color for every application
+Mwm*client*foreground:			#ffffff
+
+! Sets a background color for every application
+Mwm*client*background:			#999999 
+
+! Sets a foreground color for the active application
+Mwm*client*activeForeground:		#ffffff
+
+! Sets a background color for the active application
+Mwm*client*activeBackground:		#eda870
+
+! Sets a foreground color for your menu
+Mwm*menu*foreground:		#ffffff
+
+! Sets a background color for your menu
+Mwm*menu*background:		#4992a7
+
+! Sets a background color for dialog windows
+Mwm*background:                  #4992a7
+
+! Default font for your application titles
+!Mwm*fontList:          -*-times-medium-*-normal-*-18-*-*-*-*-*-*-*
+
+! Default font for your menus
+!Mwm*menu*fontList:     -*-times-medium-*-normal-*-18-*-*-*-*-*-*-*
+
+
+! Decorations for XTerm
+Mwm*XTerm*matteWidth: 6
+Mwm*XTerm*matteBackground: #c6b2a8
+
+! Xterm
+XTerm*renderFont      : True
+XTerm*faceSize        : 12
+XTerm*faceName        : Inconsolata
+XTerm*foreground:       #ffffff
+XTerm*background:       #686f82
+XTerm*cursorColor:      #ffffff
+XTerm.vt10060x30etry:   150x75
+XTerm*reverseWrap:      true
+XTerm*scrollKey:        true
+XTerm*saveLines:        2000
+XTerm*scrollBar:        true
+XTerm*scrollTtyOutput:  false
+
+! Nedit
+nedit*background: #686f82
+nedit*foreground: #ffffff
+
+! XBiff 
+! You will need to put your userid here
+! Causes all border and title decoration to appear on xbiff applications
+Mwm*xbiff.clientDecoration:     +all
+! Lets you select by hand the location of a new application (unless a specific
+!
+xbiff*geometry:      50x50-10+90
+!xbiff*file:          /usr/spool/mail/(user)
+xbiff*foreground:    #ffffff
+xbiff*background:    white
+xbiff*update:        10
+
+!XClock
+! Cause the xclock icon not to show up in the icon box
+xclock*clientDecoration:    -resizeh -maximize -menu -title
+xclock*clientFunctions:     -minimize
+xclock*mode:                digital
+xclock*update:              1
+xclock*foreground:  #ffffff
+xclock*background:  #686f82
+xclock*geometry:    230x40-0+0
+
+! Conky in the root windows
+Mwm*conky*clientDecoration: -all
